@@ -14,3 +14,4 @@ def username(request):
         return HttpResponse(f"{user.username} {user.email}")
 
     return ""
+
