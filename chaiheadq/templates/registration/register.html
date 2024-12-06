@@ -1,0 +1,17 @@
+ {% extends "layout.html" %}
+
+{% block title %}
+Chai aut Tweet
+{% endblock %}
+
+{% block content %}
+<h2>Register Form</h2>
+
+<form method="post" class="form">
+    {% csrf_token %}
+    {{ form.as_p}}
+
+     <button class="btn btn-warning" type="submit"> Register</button>
+</form>
+
+{% endblock %}
