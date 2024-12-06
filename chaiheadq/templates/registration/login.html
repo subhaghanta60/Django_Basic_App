@@ -1,0 +1,18 @@
+ {% extends "layout.html" %}
+
+{% block title %}
+Chai aut Tweet
+{% endblock %}
+
+{% block content %}
+<h2>Login Form</h2>
+
+<form>
+    {% csrf_token %}
+    {{ form.as_p}}
+
+     <button class="btn btn-warning" type="submit"> Login</button>
+</form>
+<p>Donn't have a Account Please <a href="{% url 'register' %}">Register Here</a></p>
+
+{% endblock %}
